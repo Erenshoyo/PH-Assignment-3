@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Browse Pets</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -16,17 +22,129 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: "#FFDC26",
+              navbarColor: "rgba(255, 249, 244, 1)",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       .adlam-display-regular {
         font-family: "ADLaM Display", serif;
         font-weight: 400;
         font-style: normal;
       }
+
+      .sora {
+        font-family: "Sora", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
     </style>
   </head>
   <body class="adlam-display-regular">
-    <header></header>
-    <main></main>
+    <header class="container mx-auto">
+      <!-- Navigation Bar -->
+        <nav class="container mx-auto bg-navbarColor">
+            <div class="navbar">
+              <div class="navbar-start">
+                <div class="flex gap-0">
+                  <img src="c1-assets/logo-header.png" alt="" />
+                  <a class="btn btn-ghost text-xl gap-0 sora hidden lg:flex"
+                    >Browse<span class="text-accent">4</span>Pets
+                  </a>
+                </div>
+              </div>
+              <!-- Large device -->
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 sora font-semibold">
+                  <li><a>Find a pet</a></li>
+                  <li><a>Breeds</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end">
+                <div class="hidden lg:flex items-center mr-4">
+                  <button class="btn btn-ghost btn-circle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn btn-ghost btn-circle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <!-- Login/Register Buttons (Hidden on Mobile) -->
+                <a class="btn sora border border-solid border-accent hidden lg:flex"
+                  >Login</a
+                >
+                <a class="btn sora ml-3 bg-accent hidden lg:flex">Register</a>
+    
+                <div class="dropdown dropdown-end lg:hidden">
+                  <div tabindex="0" role="button" class="btn btn-ghost">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                      />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 sora"
+                  >
+                    <li><a>Find a pet</a></li>
+                    <li>
+                      <a>Breeds</a>
+                    </li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="lg:hidden">
+        </nav>
+    </header>
+    <main class="container mx-auto"></main>
     <footer></footer>
   </body>
 </html>
