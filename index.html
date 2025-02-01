@@ -36,6 +36,10 @@
       };
     </script>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
       .adlam-display-regular {
         font-family: "ADLaM Display", serif;
         font-weight: 400;
@@ -264,7 +268,7 @@
         </div>
       </div>
       <!-- Products section -->
-      <section>
+      <section class="bg-navbarColor">
         <h3 class="p-5 text-2xl">Trending Pet Products</h3>
         <div class="lg:grid lg:grid-cols-2">
           <!-- Big card -->
@@ -286,7 +290,6 @@
                 </figure>
               </div>
             </div>
-            <div></div>
           </div>
           <!-- Smaller Cards -->
           <div class="grid grid-cols-2 gap-4 m-4 lg:grid-cols-3">
@@ -482,7 +485,88 @@
           </div>
         </div>
       </section>
+      <!-- Low Price Section -->
+      <section>
+        <h3 class="mt-4 pl-4 lg:mt-16 text-2xl lg:text-4xl mb-4 lg:mb-4">
+          Everyday Low Price
+        </h3>
+        <div class="lg:grid lg:grid-cols-2">
+          <!-- Grooming mitt -->
+          <div class="">
+            <div class="p-5">
+              <div
+                class="card lg:w-[750px] h-[350px] lg:h-[400px] bg-gradient-to-r from-[#F7CCFB] to-[#AFD2FD] ..."
+              >
+                <div class="card-body">
+                  <h2 class="card-title mb-2 text-3xl">Pet Grooming Mitt</h2>
+                  <p class="text-5xl text-white">$7.99</p>
+                </div>
+                <figure class="-mt-48 -mr-44 lg:-mr-56">
+                  <img
+                    class="w-[214px] lg:w-[314px] h-[268px] lg:h-[368px]"
+                    src="c1-assets/cute-dog-mid.png"
+                    alt="Dog"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- T-shirt for Dogs-->
+          <div class="lg:flex lg:items-center">
+            <div class="p-5">
+              <div
+                class="card lg:w-[600px] h-[350px] bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] ..."
+              >
+                <div class="card-body">
+                  <h2 class="card-title mb-2 text-3xl">Pet Grooming Mitt</h2>
+                  <p class="text-5xl text-white">$7.99</p>
+                </div>
+                <figure class="-mt-48 -mr-44">
+                  <img src="c1-assets/cute-pet-small.png" alt="Dog" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container mx-auto">
+        <div class="card w-[359px] h-[523px]bg-navbarColor">
+          <figure class="px-10 pt-10">
+            <img
+              class="flex items-center"
+              src="c1-assets/cute-pet-small.png"
+              alt="Shoes"
+              class="rounded-xl"
+            />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl">Get Pawsome News!</h2>
+            <p class="sora">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <input
+              type="text"
+              placeholder="Enter email"
+              class="input input-bordered input-md w-full max-w-xs"
+            />
+            <div class="card-actions">
+              <button class="btn btn-warning bg-accent sora">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="bg-cardBG">
+        <div class="flex pt-96 px-4">
+          <img src="c1-assets/logo-footer.png" alt="" />
+          <a class="btn btn-ghost text-xl gap-0 sora"
+            >Browse<span class="text-accent">4</span>Pets
+          </a>
+        </div>
+        <p class="sora p-4">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+      </div>
+    </footer>
   </body>
 </html>
